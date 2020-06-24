@@ -18,6 +18,11 @@
   display: flex;
 }
 
+.skomponuj{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .dodatek_ikonka{
   width: 50px;
   height: 50px;
@@ -32,8 +37,29 @@
 .dodatki{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/3;
 }
 
 .dodatki p:last-child{
   margin-left: auto;
+}
+
+.wielkosc{
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  cursor: pointer;
+  padding: 2px;
+  
+  border-radius: 50%;
+}
+
+.wielkosc.mala{
+  width: 50px;
+  height: 50px;
+}
+
+.wielkosc.duza{
+  width: 70px;
+  height: 70px;
 }
