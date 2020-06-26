@@ -34,13 +34,18 @@
   padding: 0 30px;
 }
 
+.zamowienieRzad{
+  display: flex;
+  padding-right: 20px;
+}
+
 .dodatki{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1/3;
 }
 
-.dodatki p:last-child{
+.dodatekRzad p:last-child, .zamowienieRzad h3:last-child{
   margin-left: auto;
 }
 
@@ -62,4 +67,8 @@
 .wielkosc.duza{
   width: 70px;
   height: 70px;
+}
+
+.wielkosc.zaznaczone{
+  background-color: red;
 }
